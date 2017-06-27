@@ -1,0 +1,25 @@
+{
+  "name": "driving_test_detector",
+  "version": "1.0.0",
+  "description": "Getting notification of new driving test",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "driving",
+    "test",
+    "detector"
+  ],
+  "author": "Samuel Ogunmola",
+  "license": "ISC",
+  "repository" : { 
+    "type" : "git",
+     "url" : "https://github.com/adesam146/driving_test_detector.git"
+  },
+  "dependencies": {
+    "nodemailer": "^4.0.1",
+    "twit": "^2.2.9"
+  }
+}
