@@ -19,6 +19,6 @@ because you app is more of a background process. All of this is completely FREE.
 
 
 # Useful Resources:
-https://www.npmjs.com/package/twit
-https://dev.twitter.com/rest/reference 
-https://nodemailer.com/about/
+https://www.npmjs.com/package/twit <br>
+https://dev.twitter.com/rest/reference <br>
+https://nodemailer.com/about/ <br>
