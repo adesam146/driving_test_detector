@@ -1,5 +1,11 @@
 console.log("The Detector is starting");
 
+// This is the package used to interact with the twitter api
+// See https://www.npmjs.com/package/twit
+const Twit = require('twit');
+const access_config = require('./access_config');
+const T = new Twit(access_config);
+
 // See https://nodemailer.com/about/
 'use strict';
 const nodemailer = require('nodemailer');
@@ -7,16 +13,14 @@ const nodemailer = require('nodemailer');
 const mail_config = require('./mail_config');
 let transporter = nodemailer.createTransport(mail_config);
 
-// See https://www.npmjs.com/package/twit
-const Twit = require('twit');
-const access_config = require('./access_config');
-const T = new Twit(access_config);
-
+// TODO: These are the twitter user ids for the accounts I intented to
+// to monitor. You can find a twitter account's user id here:
+// http://gettwitterid.com/
+// This is DVSA_HelpMe user ia
 var dvsa_user_id = 1632603697;
-var my_user_id = 2333219094;
 
 var params = {
-  follow: [my_user_id, dvsa_user_id]
+  follow: [dvsa_user_id]
 };
 
 // See https://dev.twitter.com/streaming/public &
